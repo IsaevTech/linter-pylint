@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+function fl8(){
+    find . -type f -name '*.py' -exec flake8 --show-source --count {} \;
+}
+
+function ban(){
+    bandit -r .
+}
+
+function aio(){
+    fl8
+    ban
+}
+
+case $1 in
+    flake8 ) fl8 ;;
+    bandit ) ban ;;
+    * ) aio ;;
+esac
