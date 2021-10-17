@@ -1,4 +1,5 @@
 # Python Linter
+[![Build Status](https://ci.isaev.tech/api/badges/IsaevTech/pylint/status.svg)](https://ci.isaev.tech/IsaevTech/pylint)
 
 ## Usage
 
