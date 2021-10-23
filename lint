@@ -1,26 +1,26 @@
 #!/bin/bash
 
 function fl8() {
-	flake8 --count --show-source *.py
+    flake8 --count --show-source *.py
 }
 
 function ban() {
-	bandit -r .
+    bandit -r .
 }
 
 function pl() {
-	pylint .
+    pylint .
 }
 
 function aio() {
-	fl8
-	ban
+    fl8
+    ban
 }
 
 function aiopl() {
-	fl8
-	ban
-	pl
+    fl8
+    ban
+    pl
 }
 
 case $1 in
