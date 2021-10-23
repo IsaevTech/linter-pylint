@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function fl8(){
-    find . -type f -name '*.py' -exec flake8 --show-source --count {} \;
+    flake8 --count --show-source .
 }
 
 function ban(){
