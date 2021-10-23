@@ -1,32 +1,32 @@
 #!/bin/bash
 
-function fl8(){
-    flake8 --count --show-source *.py
+function fl8() {
+	flake8 --count --show-source *.py
 }
 
-function ban(){
-    bandit -r .
+function ban() {
+	bandit -r .
 }
 
-function pl(){
-    pylint .
+function pl() {
+	pylint .
 }
 
-function aio(){
-    fl8
-    ban
+function aio() {
+	fl8
+	ban
 }
 
-function aiopl(){
-    fl8
-    ban
-    pl
+function aiopl() {
+	fl8
+	ban
+	pl
 }
 
 case $1 in
-    flake8 ) fl8 ;;
-    bandit ) ban ;;
-    pylint ) pl ;;
-    aiopl ) aiopl ;;
-    * ) aio ;;
+flake8) fl8 ;;
+bandit) ban ;;
+pylint) pl ;;
+aiopl) aiopl ;;
+*) aio ;;
 esac
