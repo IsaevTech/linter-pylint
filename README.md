@@ -1,6 +1,7 @@
 # Python Linter
 
-[![Build Status](https://ci.isaev.tech/api/badges/IsaevTech/pylint/status.svg)](https://ci.isaev.tech/IsaevTech/pylint)
+[![Docker Image CI](https://github.com/IsaevTech/linter-pylint/actions/workflows/docker-image.yml/badge.svg)](https://github.com/IsaevTech/linter-pylint/actions/workflows/docker-image.yml)
+![Docker Pulls](https://img.shields.io/docker/pulls/ismv/linter-pylint)
 
 ## Usage
 
